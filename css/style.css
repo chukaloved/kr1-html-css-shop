@@ -104,6 +104,26 @@ footer {
   border-left: 4px solid var(--color-primary);
   background-color: var(--color-surface);
 }
+.breadcrumbs {
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-md);
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.breadcrumbs a {
+  color: var(--color-primary);
+}
+
+.breadcrumbs span::before {
+  content: " / ";
+  color: var(--color-muted);
+}
+:target {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 4px;
+}
+
 
 /* ===============================
    3. Общие элементы интерфейса
@@ -119,6 +139,9 @@ a:hover {
 a:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /* ===============================
