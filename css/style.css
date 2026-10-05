@@ -424,3 +424,88 @@ html {
   border-left: 4px solid var(--color-success);
   background-color: var(--color-success-bg);
 }
+
+/* ===============================
+   6. Страница подробного товара
+   =============================== */
+
+.product-details {
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-xl);
+}
+
+.product-details__card {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: var(--space-xl);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg);
+}
+
+.product-details__media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product-details__image {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.product-details__title {
+  margin-top: 0;
+}
+
+.product-details__description {
+  color: var(--color-muted);
+}
+
+.product-details__price {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.product-details__button {
+  margin-top: var(--space-md);
+}
+
+.product-specs {
+  width: 100%;
+  margin-top: var(--space-lg);
+  border-collapse: collapse;
+}
+
+.product-specs caption {
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
+  text-align: left;
+}
+
+.product-specs th,
+.product-specs td {
+  padding: var(--space-sm);
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.product-specs th {
+  background-color: var(--color-surface);
+}
+
+/* ==============
+7. Страница заказа
+================ */
+.order-form--page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface);
+}
